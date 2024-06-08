@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+body {
+  font-family: "Galano Grotesque", sans-serif;
+  width: 1440px;
+  height: 4242px;
+  background: #fdffff;
+}
+
+:root {
+  --Primary-Sea-Blue: #4d6ee4;
+}
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.headings {
+  color: #252525;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+}
+nav {
+  width: 100%;
+  height: 84px;
+  flex-shrink: 0;
+  background: #f4fcfe;
+  display: flex;
+  align-items: center;
+}
+
+.first-logo {
+  position: relative;
+  display: flex; /* Ensure it only takes as much width as needed */
+}
+
+.logo {
+  background: #000;
+  width: 95px;
+  height: 84px;
+  margin-right: 20px;
+}
+
+.inner-logo {
+  position: absolute;
+  top: 50%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(
+    -75%,
+    -50%
+  ); /* Center the inner-logo within the first-logo */
+}
+
+.second-logo {
+  width: 169px;
+  height: 47px;
+  flex-shrink: 0;
+  border-radius: 11px;
+  opacity: 0.2;
+  background: var(--Primary-Sea-Blue);
+  margin-right: 80px; /* Adjusted margin-right for spacing */
+}
+
+.nav-heading {
+  color: #252525;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%; /* 31.2px */
+  margin-right: auto; /* This ensures the heading takes up the remaining space */
+  white-space: nowrap; /* Prevent the text from wrapping */
+}
+main {
+  display: flex;
+  margin-top: 55px;
+  gap: 80px;
+}
+.sidebar {
+  margin-left: 167px;
+}
+.details {
+  display: flex;
+  gap: 96px;
+  margin-top: 40px;
+}
+.detail-left button {
+  width: 119px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: var(--Primary-Sea-Blue);
+  margin-top: 43px;
+  color: #fff;
+}
+
+.business {
+  width: 405px;
+  height: 653px;
+}
