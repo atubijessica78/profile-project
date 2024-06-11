@@ -16,101 +16,388 @@
         <img src="./assets/Group 1578.svg" alt="" />
       </div>
       <div class="nav-heading">
-        <h1>Account Settings</h1>
+        <p>Account Settings</p>
       </div>
     </nav>
     <main>
       <div class="sidebar">
-        <div class="heading">
-          <img src="./assets/arrow-left-line 1.svg" alt="" />
-        </div>
+        <img src="./assets/arrow-left-line 1.svg" alt="" />
+
         <ul>
-          <li class="active">Personal</li>
-          <li>Business</li>
-          <li>Subscriptions</li>
-          <li>Notifications</li>
-          <li>Team</li>
+          <a href=""><li class="active">Personal</li></a>
+          <a href=""><li>Business</li></a>
+          <a href=""><li>Subscriptions</li></a>
+          <a href=""><li>Notifications</li></a>
+          <a href=""><li>Team</li></a>
         </ul>
       </div>
+
       <div class="main-content">
         <div class="personal">
-          <h1 class="headings">Personal Information</h1>
+          <h1 class="personal-heading">Personal Information</h1>
           <img src="./assets/Ellipse 29.svg" alt="" />
-          <div class="details">
-            <div class="detail-left">
-              <div class="name">
-                <h2>Name</h2>
-                Lorem ipsum
+          <div class="personal-container">
+            <div class="personal-left-column">
+              <div>
+                <h2 class="title">Name</h2>
+                <p class="name">Lorem ipsum</p>
               </div>
-              <div class="email">
-                <h2>Email</h2>
-                <p>lolo@sunbeam.studio</p>
+              <div>
+                <h2 class="title">Email</h2>
+                <p class="name">lolo@sunbeam.studio</p>
               </div>
               <button>Edit Profile</button>
             </div>
-            <div class="detail-right">
-              <div class="location">
-                <h2>Location</h2>
-                <p>Lagos, Nigeria</p>
+            <div class="personal-right-column">
+              <div>
+                <h2 class="title">Location</h2>
+                <p class="name">Lagos, Nigeria</p>
               </div>
-              <div class="phone">
-                <h2>Phone</h2>
-                <p>+234-803-123-1231</p>
+              <div>
+                <h2 class="title">Phone</h2>
+                <p class="name">+234-803-123-1231</p>
               </div>
             </div>
           </div>
         </div>
+
         <div class="business">
-          <h1 class="headings">Business Information</h1>
+          <h1 class="business-heading">Business Information</h1>
           <img src="./assets/Mask Group.svg" alt="" />
-          <div class="details">
-            <div class="detail-left">
+          <div class="business-container">
+            <div class="business-left-column">
               <div class="name">
-                <h2>Business Name</h2>
-                Sunneam Studio
+                <h2 class="title">Business Name</h2>
+                <p class="name">Sunneam Studio</p>
               </div>
               <div class="location">
-                <h2>Location</h2>
-                <p>Lagos, Nigeria</p>
+                <h2 class="title">Location</h2>
+                <p class="name">Lagos, Nigeria</p>
               </div>
               <div class="address">
-                <h2>Address</h2>
-                <p>25, Somewhere, Within the City</p>
+                <h2 class="title">Address</h2>
+                <p class="name">25, Somewhere, Within the City</p>
               </div>
-              <div class="detail-right">
-                <div class="website">
-                  <h2>Website</h2>
-                  <p>www.sunbeam.studio</p>
-                </div>
-                <div class="city">
-                  <h2>City/ZIP code</h2>
-                  <p>Ipsum, 100298</p>
-                </div>
+              <div class="email">
+                <h2 class="title">Email</h2>
+                <p class="name">lolo@sunbeam.studio</p>
               </div>
-              <div class="detail-left">
-                <div class="email">
-                  <h2>Email</h2>
-                  <p>lolo@sunbeam.studio</p>
-                </div>
-                <div class="currency">
-                  <h2>In-app Currency</h2>
-                  <p>US Dollar</p>
-                </div>
-                <button>Edit Profile</button>
+              <div class="currency">
+                <h2 class="title">In-app Currency</h2>
+                <p class="name">US Dollar</p>
               </div>
-              <div class="detail-right">
-                <div class="phone">
-                  <h2>Business Phone</h2>
-                  <p>+234-803-456-789</p>
-                </div>
-                <div class="time-zone">
-                  <h2>Time Zone</h2>
-                  <p>GMT + 01:00</p>
-                </div>
+              <button>Edit</button>
+            </div>
+
+            <div class="business-right-column">
+              <div class="website">
+                <h2 class="title">Website</h2>
+                <p class="name">www.sunbeam.studio</p>
+              </div>
+              <div class="city">
+                <h2 class="title">City/ZIP code</h2>
+                <p class="name">Ipsum, 100298</p>
+              </div>
+              <div class="phone">
+                <h2 class="title">Business Phone</h2>
+                <p class="name">+234-803-456-789</p>
+              </div>
+              <div class="time-zone">
+                <h2 class="title">Time Zone</h2>
+                <p class="name">GMT + 01:00</p>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="subscriptions">
+          <p class="subscription-title">Subscriptions</p>
+          <div class="subscription">
+            <div class="subscription-container">
+              <div class="subscription-heading">
+                <p>Active Subscription</p>
+                <img src="./assets/checkbox-circle-fill.svg" alt="" />
+              </div>
+              <div class="subscription-amount">
+                <img src="./assets/Group 1518.svg" alt="" />
+                <button>Change Plan</button>
+              </div>
+            </div>
+            <div class="subscription-progress">
+              <progress value="56.4" max="100">56.4%</progress>
+            </div>
+            <div class="subscription-date">
+              <p class="period">245 days left</p>
+              <p class="date">Due: 12 Jan 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="notification">
+          <div class="notification-title">Notification Settings</div>
+          <div class="notification-subheading">
+            <div class="email-notification">
+              <p>Email Notifications</p>
+              <img src="./assets/circle-chevron-bottom.svg" alt="" />
+            </div>
+            <div class="notification-selector">
+              <p>Select all Notifications</p>
+              <img src="./assets/checkbox-blank-line.svg" alt="" />
+            </div>
+          </div>
+          <div class="notification-module-container">
+            <div class="notification-module">
+              <h2 class="module-title">Module 1</h2>
+              <div class="checkbox-module-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit amet,
+                  consectetur
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Dolor sit amet consectetur.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Sit faucibus integer morbi massa dis
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="notification-module-container">
+            <div class="notification-module">
+              <h2 class="module-title">Module 1</h2>
+              <div class="checkbox-module-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit amet,
+                  consectetur
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Dolor sit amet consectetur.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Sit faucibus integer morbi massa dis
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="notification-module-container">
+            <div class="notification-module">
+              <h2 class="module-title">Module 1</h2>
+              <div class="checkbox-module-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit amet,
+                  consectetur
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Dolor sit amet consectetur.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Sit faucibus integer morbi massa dis
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="notification-module-container">
+            <div class="notification-module">
+              <h2 class="module-title">Module 1</h2>
+              <div class="checkbox-module-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit amet,
+                  consectetur
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Dolor sit amet consectetur.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Sit faucibus integer morbi massa dis
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="notification-module-container">
+            <div class="notification-module">
+              <h2 class="module-title">Module 1</h2>
+              <div class="checkbox-module-list">
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Lorem ipsum dolor sit amet,
+                  consectetur
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Dolor sit amet consectetur.
+                </label>
+                <label class="checkbox-item">
+                  <input type="checkbox" /> Sit faucibus integer morbi massa dis
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="app-notification-header">
+            <h2>In-App Notifications</h2>
+            <img src="./assets/circle-chevron-bottom.svg" alt="" />
+          </div>
+          <div class="app-notification-container">
+            <div class="notification-container">
+              <div class="notification-header">
+                <p>Suspendisse massa est dictum pellentesque rhoncus</p>
+                <img src="./assets/Group.svg" alt="" />
+              </div>
+              <p class="notification-text">
+                Sit nisi, turpis leo orci, phasellus vulputate volutpat.
+                Imperdiet est enim nunc, amet cursus nulla adipiscing eget odio.
+                Dictum sollicitudin.
+              </p>
+            </div>
+
+            <div class="notification-container">
+              <div class="notification-header">
+                <p>Libero dolor praesent blandit sed nunc</p>
+                <img src="./assets/Group 1.svg" alt="" />
+              </div>
+              <p class="notification-text">
+                Sapien suscipit tincidunt in faucibus viverra. Suspendisse risus
+                non.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="teams">
+          <h2 class="team-header">Team</h2>
+          <div class="team-container-wrapper">
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="team-container">
+              <div class="team-image">
+                <img src="./assets/Ellipse 58.svg" alt="" />
+              </div>
+              <div class="team-member-details">
+                <h2 class="member-name">Purus Sagittis</h2>
+                <h3 class="member-job-title">System Manager</h3>
+                <p class="member-email">
+                  <img
+                    src="./assets/mail-line.svg"
+                    alt=""
+                  />tristique@sunbeam.studio
+                </p>
+              </div>
+              <div class="elipsis">
+                <img src="./assets/more-2-line.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="add-member-container">
+          <div class="invitation-header">Invite to Team
+          <img src="./assets/circle-chevron-bottom.svg" alt="" />
+        </div>
+        <div class="invitation-description">
+          Sit pretium, adipiscing mi egestas vel nulla urna laoreet. Ipsum nibh
+          consequat nisi porttitor suspendisse id ut. Elit, eget ac sed
+          fringilla mattis.
+        </div>
+        <button class="invitation-btn">Add a Member</button>
       </div>
     </main>
   </body>
