@@ -24,44 +24,44 @@
         <img src="./assets/arrow-left-line 1.svg" alt="" />
 
         <ul>
-          <a href=""><li class="active">Personal</li></a>
-          <a href=""><li>Business</li></a>
-          <a href=""><li>Subscriptions</li></a>
-          <a href=""><li>Notifications</li></a>
-          <a href=""><li>Team</li></a>
+          <a href="#personal-section"><li class="active">Personal</li></a>
+          <a href="#business-section"><li>Business</li></a>
+          <a href="#subscription-section"><li>Subscriptions</li></a>
+          <a href="#notification-section"><li>Notifications</li></a>
+          <a href="#team-section"><li>Team</li></a>
         </ul>
       </div>
 
       <div class="main-content">
-        <div class="personal">
+        <div id="personal-section">
           <h1 class="personal-heading">Personal Information</h1>
           <img src="./assets/Ellipse 29.svg" alt="" />
           <div class="personal-container">
             <div class="personal-left-column">
               <div>
                 <h2 class="title">Name</h2>
-                <p class="name">Lorem ipsum</p>
+                <p class="name" id="personal-name">Lorem ipsum</p>
               </div>
               <div>
                 <h2 class="title">Email</h2>
-                <p class="name">lolo@sunbeam.studio</p>
+                <p class="name" id="personal-email">lolo@sunbeam.studio</p>
               </div>
-              <button>Edit Profile</button>
+              <button id="open">Edit Profile</button>
             </div>
             <div class="personal-right-column">
               <div>
                 <h2 class="title">Location</h2>
-                <p class="name">Lagos, Nigeria</p>
+                <p class="name" id="personal-location">Lagos, Nigeria</p>
               </div>
               <div>
                 <h2 class="title">Phone</h2>
-                <p class="name">+234-803-123-1231</p>
+                <p class="name" id="personal-phone">+234-803-123-1231</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="business">
+        <div id="business-section">
           <h1 class="business-heading">Business Information</h1>
           <img src="./assets/Mask Group.svg" alt="" />
           <div class="business-container">
@@ -86,7 +86,7 @@
                 <h2 class="title">In-app Currency</h2>
                 <p class="name">US Dollar</p>
               </div>
-              <button>Edit</button>
+              <button id="open-business">Edit</button>
             </div>
 
             <div class="business-right-column">
@@ -110,7 +110,7 @@
           </div>
         </div>
 
-        <div class="subscriptions">
+        <div id="subscription-section">
           <p class="subscription-title">Subscriptions</p>
           <div class="subscription">
             <div class="subscription-container">
@@ -133,7 +133,7 @@
           </div>
         </div>
 
-        <div class="notification">
+        <div id="notification-section">
           <div class="notification-title">Notification Settings</div>
           <div class="notification-subheading">
             <div class="email-notification">
@@ -275,7 +275,7 @@
           </div>
         </div>
 
-        <div class="teams">
+        <div id="team-section">
           <h2 class="team-header">Team</h2>
           <div class="team-container-wrapper">
             <div class="team-container">
@@ -400,5 +400,142 @@
         <button class="invitation-btn">Add a Member</button>
       </div>
     </main>
+
+    <!-- ------Edit Profile modal screen ----------- -->
+   
+        <div  class="modal" id="business-modal">
+          <div class="edit-container">
+            <div class="heading-wrapper">
+              <h1 class="title">Edit Profile</h1>
+              <button  class="close">
+                <img
+                src="./assets/close-fill 1.svg"
+                alt=""
+                class="close-icon"
+               
+              />
+              </button>
+           
+            </div>
+    
+            <div class="profile-image-wrapper">
+              <img src="./assets/Ellipse 29.svg" alt="" class="profile-image" />
+              <div class="camera">
+              <img src="./assets/polaroid-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="input-group-container">
+              <div class="input-group">
+                <div class="input-field">
+                  <input type="text" id="modal-first-name" placeholder=" " />
+                  <label>First name</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="modal-last-name" placeholder=" " />
+                  <label>Last name</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="modal-country" placeholder=" " />
+                  <label>Country</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="modal-city" placeholder=" " />
+                  <label>City</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="modal-email"placeholder=" " />
+                  <label>Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="text" id="modal-phone" placeholder=" " />
+                  <label>Phone</label>
+                </div>
+              </div>
+            </div>
+            <div class="container-button">
+              <button class="btn-1 close" >Cancel</button>
+              <button class="btn-2" id="save-changes">Save Changes</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-business-information" id="edit-business-information">
+          <div class="business-edit-container">
+            <div class="heading-wrapper">
+              <h1 class="title">Edit Business Information</h1>
+              <button  class="close">
+                <img
+                src="./assets/close-fill 1.svg"
+                alt=""
+                class="close-icon"
+               
+              />
+              </button>
+           
+            </div>
+    
+            <div class="profile-image-wrapper">
+              <img src="./assets/Mask Group.svg" alt="" class="profile-image" />
+              <div class="camera">
+              <img src="./assets/polaroid-line.svg" alt="" />
+              </div>
+            </div>
+            <div class="input-group-container">
+              <div class="business-input-group">
+                <div class="input-field full-width">
+                  <input type="text" id="business-modal-business-name" placeholder=" " />
+                  <label>business name</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-country" placeholder=" " />
+                  <label>Country</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-state" placeholder=" " />
+                  <label>State</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-city" placeholder=" " />
+                  <label>City</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-zipcode" placeholder=" " />
+                  <label>Zip code</label>
+                </div>
+                <div class="input-field full-width">
+                  <input type="text" id="business-modal-address" placeholder=" " />
+                  <label>Address</label>
+                </div>
+                <div class="input-field full-width">
+                  <input type="text" id="business-modal-email" placeholder=" " />
+                  <label>Email</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-business-phone" placeholder=" " />
+                  <label>Business Phone</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-website" placeholder=" " />
+                  <label>Website</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-in-app-currency" placeholder=" " />
+                  <label>In-app Currency</label>
+                </div>
+                <div class="input-field half-width">
+                  <input type="text" id="business-modal-time-zone" placeholder=" " />
+                  <label>Timezone</label>
+                </div>
+              </div>
+            </div>
+            <div class="container-button">
+              <button class="btn-1 close" >Cancel</button>
+              <button class="btn-2" id="save-business-changes">Save Changes</button>
+            </div>
+          </div>
+        </div>
+   
+    
+    <script src="./editProfile.js"></script>
   </body>
 </html>
