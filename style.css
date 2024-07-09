@@ -3045,7 +3045,7 @@ input:not(:focus) ~ .input-field label {
   }
 
   .sidebar img {
-    display: none;
+    display: flex;
   }
   .sidebar a {
     color: #fff;
