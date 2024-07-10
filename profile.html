@@ -19,12 +19,9 @@
       <div class="nav-heading">
         <p>Account Settings</p>
       </div>
-      <div class="menu" id="menu-icon">
-      <i class="fas fa-bars"></i>
-    </div>
-    <div id="close-nav-icon">
-      <i class="fas fa-times"></i>
-    </div>
+   <div class="mobile-logo">
+    <img src="./assets1/Group 1588.svg" alt="" >
+   </div>
     </nav>
     <main>
       <div class="sidebar" id="sidebar-container">
@@ -42,10 +39,12 @@
 
       <div class="main-content">
         <div id="personal-section">
-          <h1 class="personal-heading">Personal Information</h1>
+          <h1 class="personal-heading">Personal Information
+            <button id="open">Edit</button>
+          </h1>
           <img src="./assets1/Ellipse 29.svg" alt="" />
           <div class="personal-container">
-            <div class="personal-left-column">
+            <div class="personal-column">
               <div>
                 <h2 class="title">Name</h2>
                 <p class="name" id="personal-name">Lorem ipsum</p>
@@ -54,9 +53,7 @@
                 <h2 class="title">Email</h2>
                 <p class="name" id="personal-email">lolo@sunbeam.studio</p>
               </div>
-              <button id="open">Edit Profile</button>
-            </div>
-            <div class="personal-right-column">
+              <button id="open-1">Edit Profile</button>
               <div>
                 <h2 class="title">Location</h2>
                 <p class="name" id="personal-location">Lagos, Nigeria</p>
@@ -66,11 +63,15 @@
                 <p class="name" id="personal-phone">+234-803-123-1231</p>
               </div>
             </div>
+         
           </div>
         </div>
 
         <div id="business-section">
-          <h1 class="business-heading">Business Information</h1>
+          <h1 class="business-heading">
+            Business Information
+            <button id="open-business">Edit</button>
+          </h1>
           <img src="./assets1/Mask Group.svg" alt="" />
           <div class="business-container">
             <div class="business-column">
@@ -110,7 +111,7 @@
                 <h2 class="title">Time Zone</h2>
                 <p class="name" id="business-timezone">GMT + 01:00</p>
               </div>
-              <button id="open-business">Edit</button>
+              <button id="open-business-1">Edit</button>
         
             
             </div>
@@ -119,7 +120,9 @@
         </div>
 
         <div id="subscription-section">
-          <p class="subscription-title">Subscriptions</p>
+          <p class="subscription-title">Subscriptions
+            <button>Change </button>
+          </p>
           <div class="subscription">
             <div class="subscription-container">
               <div class="subscription-heading">
@@ -150,6 +153,10 @@
             </div>
             <div class="notification-selector">
               <p>Select all Notifications</p>
+              <img src="./assets1/checkbox-blank-line.svg" alt="" />
+            </div>
+            <div class="mobile-notification-selector">
+              <p>Select all </p>
               <img src="./assets1/checkbox-blank-line.svg" alt="" />
             </div>
           </div>

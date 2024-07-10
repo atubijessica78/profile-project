@@ -2,6 +2,7 @@ const modal_container = document.getElementById("business-modal");
 const close = document.querySelectorAll(".close");
 const saveChanges = document.getElementById("save-changes");
 const open = document.getElementById("open");
+const open1 = document.getElementById("open-1");
 
 if (open && modal_container) {
   open.addEventListener("click", () => {
@@ -9,6 +10,11 @@ if (open && modal_container) {
   });
 }
 
+if (open1 && modal_container) {
+  open1.addEventListener("click", () => {
+    modal_container.classList.add("show");
+  });
+}
 close.forEach((button) => {
   button.addEventListener("click", () => {
     modal_container.classList.remove("show");
@@ -38,6 +44,7 @@ saveChanges.addEventListener("click", () => {
 // ------- Edit Business Information ------
 
 const openBusiness = document.getElementById("open-business");
+const openBusiness1 = document.getElementById("open-business-1");
 const business_modal_container = document.getElementById(
   "edit-business-information"
 );
@@ -52,9 +59,17 @@ if (openBusiness && business_modal_container) {
   });
 }
 
+if (openBusiness1 && business_modal_container) {
+  openBusiness1.addEventListener("click", () => {
+    business_modal_container.classList.add("show");
+
+    document.body.style.overflow = "hidden";
+  });
+}
 for (const btn of btns) {
   btn.addEventListener("click", function () {
     business_modal_container.classList.remove("show");
+    document.body.style.overflow = "scroll";
   });
 }
 
