@@ -289,6 +289,9 @@ form button {
 
   main {
     width: 100vw;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .left-column img {
@@ -303,18 +306,25 @@ form button {
     width: 100vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-self: center;
-
+    align-items: center;
     z-index: 99;
+
+    .arrow {
+      display: flex;
+      width: 50%;
+      justify-content: center;
+      align-self: flex-start;
+      img {
+        width: 25%;
+        height: 30px;
+        margin-top: 44px;
+        margin-bottom: 47px;
+        flex-shrink: 0;
+        display: flex;
+      }
+    }
   }
-  .middle-column img {
-    width: 30px;
-    height: 30px;
-    margin-top: 44px;
-    margin-bottom: 47px;
-    flex-shrink: 0;
-  }
+
   .heading {
     color: #000;
     font-size: 25px;
@@ -324,72 +334,77 @@ form button {
   form {
     display: flex;
     gap: 20px;
-    width: 100%;
     flex-direction: column;
+    align-items: center;
     margin-top: 80px;
+
+    button {
+      max-width: 467px;
+      height: 48px;
+      flex-shrink: 0;
+    }
   }
-  form input {
-    border-radius: 8px;
-    border: 1px solid var(--Neutral-Grey);
-    height: 22px;
-  }
-  form button {
-    max-width: 467px;
-    height: 48px;
-    flex-shrink: 0;
-  }
+
   .otp-code-container {
     display: flex; /* Use flexbox */
-    width: auto;
-    max-width: 350px;
-    width: 300px;
+    gap: 0;
     justify-content: space-between;
     flex-shrink: 0;
-  }
 
-  .otp-code-container input {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: 38px;
-    width: 38px; /* Ensure consistent width */
-    height: 38px;
-    flex-shrink: 0;
-    border-radius: 8px;
-    border: 1px solid #ccc; /* Add border for visibility */
-    font-size: 1.5em; /* Increase font size */
-  }
+    .otp-input {
+      width: 100%;
 
-  .text {
-    color: var(--dark);
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    opacity: 0.8;
-  }
+      display: flex;
+      justify-content: center;
+      gap: 0px;
 
-  .resend {
-    max-width: 350px;
-    width: 300px;
-    display: flex;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 40px;
-  }
-  .resend a {
-    color: var(--Primary-Sea-Blue, #4d6ee4);
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+      input {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        max-width: 38px;
+        width: 30px;
+        gap: 0;
+
+        height: 38px;
+        flex-shrink: 0;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        font-size: 1.5em;
+      }
+    }
+
+    .text {
+      color: var(--dark);
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      opacity: 0.8;
+    }
+
+    .resend {
+      max-width: 350px;
+      width: 300px;
+      display: flex;
+      gap: 5px;
+      justify-content: center;
+      align-items: center;
+      margin-top: 40px;
+
+      a {
+        color: var(--Primary-Sea-Blue, #4d6ee4);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+    }
   }
 
   .signin-btn {
-    max-width: 350px;
-    width: 300px;
+    width: 70%;
     height: 48px;
     flex-shrink: 0;
     border-radius: 8px;
